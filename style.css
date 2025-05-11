@@ -1030,3 +1030,77 @@ body {
     margin: 0.5rem 0;
   }
 }
+
+
+
+/* Example container that adapts */
+.container {
+  max-width: 1200px;  /* caps on large screens */
+  width: 90%;         /* 90% of the viewport on smaller screens */
+  margin: 0 auto;     /* center horizontally */
+  display: flex;      /* flexbox for layout */
+  flex-wrap: wrap;    /* allow items to wrap on narrow screens */
+  gap: 1rem;          /* consistent spacing */
+}
+.product-card {
+  flex: 1 1 200px;    /* grow, shrink, base width 200px */
+}
+
+
+img, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+/* Mobile-first styles apply by default */
+
+/* Tablets and up */
+@media (min-width: 600px) {
+  nav ul {
+    display: flex;        /* show nav links in a row */
+    justify-content: center;
+  }
+  .sidebar {
+    display: block;       /* show sidebar on tablets+ */
+  }
+}
+
+/* Desktops and up */
+@media (min-width: 992px) {
+  .container {
+    gap: 2rem;
+  }
+  .product-card {
+    flex: 1 1 300px;
+  }
+}
+
+
+/* Hide the menu by default on mobile */
+.main-nav ul {
+  display: none;
+}
+.menu-toggle {
+  display: block;
+  background: none;
+  border: none;
+  font-size: 2rem;
+}
+
+/* When toggled (via JS), show the menu */
+.main-nav.open ul {
+  display: block;
+}
+
+/* On larger screens, always show nav inline */
+@media (min-width: 600px) {
+  .menu-toggle {
+    display: none;
+  }
+  .main-nav ul {
+    display: flex;
+  }
+}
+
