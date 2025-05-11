@@ -3,58 +3,177 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>pixoffer - Blog</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Flixoffer - Blog</title>
+  <link rel="stylesheet" href="/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+
+
+
 </head>
 <body>
 
-  <!-- Navbar Section -->
-  <nav class="navbar">
-    <a href="index.html" class="logo">pixoffer</a>
-    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-    <ul class="nav-menu">
-         <li><a href="index.html">Home</a></li>
-        <li><a href="product.html">Products</a></li>
-        <li><a href="deal.html">Deals</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
+  
+     <!-- Navbar Section -->
+     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="/craiyon_001715_image.png" alt="Logo" width="40" height="30" class="d-inline-block align-text-top">
+          Flixoffer
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="product.html">Product</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="deal.html">Deal</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
 
   <!-- Blog Section -->
-  <section class="blog-listing">
-    <h2>Latest Blog Posts</h2>
-    <div class="blog-cards">
-      <div class="blog-card">
-        <img src="https://via.placeholder.com/400x200" alt="Blog 1">
-        <h3>Why Shop Online: The Benefits of Online Shopping</h3>
-        <p class="excerpt">Online shopping has revolutionized the way we shop. Discover the benefits of shopping online and how it can save you time and money...</p>
-        <a href="blog-post.html" class="read-more">Read More</a>
+<!-- Blog Section using Bootstrap -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <h2 class="mb-4 text-center fw-bold">From Our Blog</h2>
+    <div class="row g-4">
+
+      <!-- Blog Card 1 -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="Blog 1">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Why Shop Online: The Benefits of Online Shopping</h5>
+            <p class="card-text">Discover how online shopping can save you time and money...</p>
+            <a href="#" class="btn btn-primary mt-auto">Read More</a>
+          </div>
+        </div>
       </div>
-      <div class="blog-card">
-        <img src="https://via.placeholder.com/400x200" alt="Blog 2">
-        <h3>Top 10 Electronics Deals This Month</h3>
-        <p class="excerpt">Looking for the best deals on electronics? We’ve compiled a list of top 10 electronics you can grab at discounted prices...</p>
-        <a href="blog-post.html" class="read-more">Read More</a>
+
+      <!-- Blog Card 2 -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="Blog 2">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Top 10 Electronic Deals This Month</h5>
+            <p class="card-text">We’ve compiled the top 10 electronics deals with amazing discounts...</p>
+            <a href="#" class="btn btn-primary mt-auto">Read More</a>
+          </div>
+        </div>
       </div>
-      <div class="blog-card">
-        <img src="https://via.placeholder.com/400x200" alt="Blog 3">
-        <h3>How to Choose the Perfect Watch</h3>
-        <p class="excerpt">Choosing the perfect watch can be a challenge. Here are some tips on selecting the right one based on style, functionality, and budget...</p>
-        <a href="blog-post.html" class="read-more">Read More</a>
+
+      <!-- Blog Card 3 -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="Blog 3">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">How to Choose the Perfect Watch</h5>
+            <p class="card-text">Tips on selecting the right watch based on budget and style...</p>
+            <a href="#" class="btn btn-primary mt-auto">Read More</a>
+          </div>
+        </div>
       </div>
+
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Footer Section -->
-  <footer>
-    <p>&copy; 2025 pixoffer. All rights reserved.</p>
-  </footer>
+<!-- Blog Section using Bootstrap -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <h2 class="mb-4 text-center fw-bold">From Our Blog</h2>
+    <div class="row g-4">
 
-  <script src="script.js"></script>
+      <!-- Blog Card 1 -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="Blog 1">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Why Shop Online: The Benefits of Online Shopping</h5>
+            <p class="card-text">Discover how online shopping can save you time and money...</p>
+            <a href="#" class="btn btn-primary mt-auto">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Blog Card 2 -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="Blog 2">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Top 10 Electronic Deals This Month</h5>
+            <p class="card-text">We’ve compiled the top 10 electronics deals with amazing discounts...</p>
+            <a href="#" class="btn btn-primary mt-auto">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Blog Card 3 -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="Blog 3">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">How to Choose the Perfect Watch</h5>
+            <p class="card-text">Tips on selecting the right watch based on budget and style...</p>
+            <a href="#" class="btn btn-primary mt-auto">Read More</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+ <!-- Footer Section -->
+<!-- Modern Footer with Bootstrap -->
+<footer class="bg-primary text-white pt-4">
+  <div class="container text-center">
+
+    <!-- Logo / Brand -->
+    <h4 class="mb-3">Flixoffer</h4>
+
+    <!-- Navigation Links -->
+    <ul class="list-inline mb-3">
+      <li class="list-inline-item mx-2"><a href="index.html" class="text-white text-decoration-none">Home</a></li>
+      <li class="list-inline-item mx-2"><a href="blog.html" class="text-white text-decoration-none">Blog</a></li>
+      <li class="list-inline-item mx-2"><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
+    </ul>
+
+    <!-- Social Icons -->
+    <div class="mb-3">
+      <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+      <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
+      <a href="https://www.instagram.com/flixoffer/?utm_source=ig_web_button_share_sheet" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+      <a href="#" class="text-white"><i class="bi bi-envelope-fill"></i></a>
+    </div>
+
+    <!-- Copyright -->
+    <p class="mb-0 pb-3">&copy; 2025 Flixoffer. All rights reserved.</p>
+
+  </div>
+</footer>
+
+  <script src="/script.js"></script>
 </body>
 </html>
