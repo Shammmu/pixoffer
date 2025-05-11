@@ -3,58 +3,152 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>pixoffer - Deals</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Flixoffer - Deals</title>
+  <link rel="stylesheet" href="/style.css">
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 </head>
 <body>
 
-  <!-- Navbar Section -->
-  <nav class="navbar">
-    <a href="index.html" class="logo">pixoffer</a>
-    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-    <ul class="nav-menu">
-      <li><a href="index.html">Home</a></li>
-        <li><a href="product.html">Products</a></li>
-        <li><a href="deal.html">Deals</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
+ 
+     <!-- Navbar Section -->
+     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="/craiyon_001715_image.png" alt="Logo" width="40" height="30" class="d-inline-block align-text-top">
+          Flixoffer
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="product.html">Product</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="deal.html">Deal</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    
 
   <!-- Deals Section -->
-  <section class="deals-listing">
-    <h2>Special Deals & Offers</h2>
-    <div class="deal-cards">
-      <div class="deal-card">
-        <img src="https://via.placeholder.com/200x150" alt="Deal 1">
-        <h3>Discounted Smartphone</h3>
-        <p class="price">$249.99 <span class="old-price">$299.99</span></p>
-        <a href="https://www.amazon.com/dp/PRODUCT_ID" class="buy-btn" target="_blank">Buy Now</a>
+<section class="container my-4">
+  <h2 class="text-center mb-4">Electronics</h2>
+  <div class="row g-3">
+    <div class="col-12 col-sm-6 col-md-4">
+      <div class="card h-100 shadow-sm">
+        <img src="img/product1.jpg" class="card-img-top" alt="Product 1">
+        <div class="card-body">
+          <h5 class="card-title">Smartphone</h5>
+          <p class="card-text text-primary fw-bold">$299.99</p>
+          <a href="#" class="btn btn-warning">Buy Now</a>
+        </div>
       </div>
-      <div class="deal-card">
-        <img src="https://via.placeholder.com/200x150" alt="Deal 2">
-        <h3>Limited Time Laptop Offer</h3>
-        <p class="price">$699.99 <span class="old-price">$899.99</span></p>
-        <a href="https://www.flipkart.com/product/PRODUCT_ID" class="buy-btn" target="_blank">Buy Now</a>
+    </div>
+    <div class="col-12 col-sm-6 col-md-4">
+      <div class="card h-100 shadow-sm">
+        <img src="img/product2.jpg" class="card-img-top" alt="Product 2">
+        <div class="card-body">
+          <h5 class="card-title">Laptop</h5>
+          <p class="card-text text-primary fw-bold">$799.99</p>
+          <a href="#" class="btn btn-warning">Buy Now</a>
+        </div>
       </div>
-      <div class="deal-card">
-        <img src="https://via.placeholder.com/200x150" alt="Deal 3">
-        <h3>Smartwatch Sale</h3>
-        <p class="price">$129.99 <span class="old-price">$179.99</span></p>
-        <a href="https://www.amazon.com/dp/PRODUCT_ID" class="buy-btn" target="_blank">Buy Now</a>
+    </div>
+    <div class="col-12 col-sm-6 col-md-4">
+      <div class="card h-100 shadow-sm">
+        <img src="img/product3.jpg" class="card-img-top" alt="Product 3">
+        <div class="card-body">
+          <h5 class="card-title">Smartwatch</h5>
+          <p class="card-text text-primary fw-bold">$149.99</p>
+          <a href="#" class="btn btn-warning">Buy Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <section class="container my-4">
+    <h2 class="text-center mb-4">Electronics</h2>
+    <div class="row g-3">
+      <div class="col-12 col-sm-6 col-md-4">
+        <div class="card h-100 shadow-sm">
+          <img src="img/product1.jpg" class="card-img-top" alt="Product 1">
+          <div class="card-body">
+            <h5 class="card-title">Smartphone</h5>
+            <p class="card-text text-primary fw-bold">$299.99</p>
+            <a href="#" class="btn btn-warning">Buy Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4">
+        <div class="card h-100 shadow-sm">
+          <img src="img/product2.jpg" class="card-img-top" alt="Product 2">
+          <div class="card-body">
+            <h5 class="card-title">Laptop</h5>
+            <p class="card-text text-primary fw-bold">$799.99</p>
+            <a href="#" class="btn btn-warning">Buy Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4">
+        <div class="card h-100 shadow-sm">
+          <img src="img/product3.jpg" class="card-img-top" alt="Product 3">
+          <div class="card-body">
+            <h5 class="card-title">Smartwatch</h5>
+            <p class="card-text text-primary fw-bold">$149.99</p>
+            <a href="#" class="btn btn-warning">Buy Now</a>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Footer Section -->
-  <footer>
-    <p>&copy; 2025 . All rights reserved.</p>
-  </footer>
+<!-- Modern Footer with Bootstrap -->
+<footer class="bg-primary text-white pt-4">
+  <div class="container text-center">
 
-  <script src="script.js"></script>
+    <!-- Logo / Brand -->
+    <h4 class="mb-3">Flixoffer</h4>
+
+    <!-- Navigation Links -->
+    <ul class="list-inline mb-3">
+      <li class="list-inline-item mx-2"><a href="index.html" class="text-white text-decoration-none">Home</a></li>
+      <li class="list-inline-item mx-2"><a href="blog.html" class="text-white text-decoration-none">Blog</a></li>
+      <li class="list-inline-item mx-2"><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
+    </ul>
+
+    <!-- Social Icons -->
+    <div class="mb-3">
+      <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+      <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
+      <a href="https://www.instagram.com/flixoffer/?utm_source=ig_web_button_share_sheet" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+      <a href="#" class="text-white"><i class="bi bi-envelope-fill"></i></a>
+    </div>
+
+    <!-- Copyright -->
+    <p class="mb-0 pb-3">&copy; 2025 Flixoffer. All rights reserved.</p>
+
+  </div>
+</footer>
+  <script src="/script.js"></script>
 </body>
 </html>
