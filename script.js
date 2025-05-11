@@ -11,16 +11,8 @@ navToggle.addEventListener('click', () => {
 
 
 
-// Toggle mobile menu
-const navToggle = document.querySelector(".nav-toggle");
-const navMenu = document.querySelector(".nav-menu");
-
-navToggle.addEventListener("click", () => {
-  navMenu.classList.toggle("active");
-});
+function toggleMenu() {
+  document.getElementById("navLinks").classList.toggle("active");
+}
 
 
-document.querySelector('.menu-toggle')
-  .addEventListener('click', () => {
-    document.querySelector('.main-nav').classList.toggle('open');
-});
