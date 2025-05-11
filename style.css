@@ -743,5 +743,8 @@ body {
   background-color: #0056b3;
 }
 
+.d-flex a {
+  text-decoration: none;
+}
 
 
